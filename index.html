@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Text Editor</title>
+</head>
+<body>
+    <header >
+
+    </header>
+    <main>
+        <section class="mx-auto mt-36 bg-sky-800 w-2/4 min-h-96  p-2 rounded-lg">
+            <h1 class="pb-3 text-center text-white font-semibold text-3xl">My Text Editor</h1>
+            <div class="border-2 border-black w-3/4 p-4 bg-gray-400 mx-auto min-h-80 rounded-lg">
+                <div class="grid grid-cols-3 gap-5">
+                    <div>
+                        <button type="button" onclick="f2(this)">
+                            <i class="fa-solid fa-bold p-2 hover:bg-yellow-600"></i>
+                        </button>
+                        <button type="button" onclick="f3(this)">
+                            <i class="fa-solid fa-italic p-2 hover:bg-yellow-600"></i>
+                        </button>
+                        <button type="button" onclick="f4(this)">
+                            <i class="fa-solid fa-underline p-2 hover:bg-yellow-600"></i>
+                        </button>
+                    </div>
+                     
+                    <div>
+                        <button type="button" onclick="f5(this)">
+                            <i class="fa-solid fa-align-left p-2 hover:bg-yellow-600"></i>
+                        </button>
+                        <button type="button" onclick="f6(this)">
+                            <i class="fa-solid fa-align-center p-2 hover:bg-yellow-600"></i>
+                        </button>
+                        <button type="button" onclick="f7(this)">
+                            <i class="fa-solid fa-align-right p-2 hover:bg-yellow-600"></i>
+                        </button>
+                        <button type="button" onclick="f8(this)">
+                            <i class="fa-solid fa-align-justify p-2 hover:bg-yellow-600"></i>
+                        </button>
+                    </div>
+
+                    <div>
+                        <input class="w-9 bg-blue-600  hover:bg-yellow-600" type="number" name="" id="font-size" min="1" max="70" value="16" onchange="f1(this)">
+                        <button type="button" onclick="f9(this)">
+                           <span class="p-2 hover:bg-yellow-600">aA</span> 
+                        </button>
+                        <button type="button" onclick="f10(this)">
+                                <i class="fa-solid fa-text-slash p-2 hover:bg-yellow-600"></i></button>
+                        </button>
+                        <input class="w-8 " type="color" name="" id="" onchange="f11(this)">
+                        
+                    </div>
+                </div>
+                <hr class="border-t-2 border-black w-full mt-3 rounded">
+                <div class="col">
+                    <textarea id="text-area" class="w-full min-h-64 mt-4 rounded-lg p-3" name="" cols="30" rows="10" placeholder="Start write text from here"></textarea>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="editor.js"></script>
+</body>
+</html>
